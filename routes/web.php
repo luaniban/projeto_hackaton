@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\PaginaDoEsudante;
 use App\Livewire\Users\Index;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,8 @@ Route::middleware([
 });
 
 
+Route::get('/estudantes', App\Livewire\Estudantes\Index::class)->name("estudantes");
+
 Route::get("/users", Index::class)->name("users");
+
+Route::get("/pagina-do-estudante", PaginaDoEsudante::class)->name('pagina-estudante');

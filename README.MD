@@ -6,7 +6,7 @@ npm install
 
 
 git init
-git add .
+git add .'
 git commit -m "Primeiro commit do hackaton"
 git branch -M main
 git remote add origin https://github.com/luaniban/projeto_hackaton

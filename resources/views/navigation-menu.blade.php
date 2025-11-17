@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-[#e0f2fe] border-b border-gray-100">
 
     <!-- Animações -->
     <style>
@@ -38,11 +38,24 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
-                   <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex animate-section delay-2">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex animate-section delay-2">
                     <x-nav-link href="{{ route('users') }}" :active="request()->routeIs('users')">
-                        {{ __('Users') }}
+                        {{ __('Usuários') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex animate-section delay-2">
+                    <x-nav-link href="{{ route('estudantes') }}" :active="request()->routeIs('estudantes')">
+                        {{ __('Estudantes') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex animate-section delay-2">
+                    <x-nav-link href="{{ route('pagina-estudante') }}" :active="request()->routeIs('pagina-estudante')">
+                        {{ __('Pagina do Estudante') }}
+                    </x-nav-link>
+                </div>
+
+                
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">

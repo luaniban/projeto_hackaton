@@ -19,6 +19,9 @@ class RoleSeeder extends Seeder
             [
                 'name' => 'Usuário',
             ],
+            [
+                'name' => 'Estudante'
+            ],
         ]);
     }
 }
