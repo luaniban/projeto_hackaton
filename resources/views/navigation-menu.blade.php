@@ -28,7 +28,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center animate-section delay-1">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-mark class="block h-9 w-auto" />
+                        <img src="{{ asset('logotipo.png') }}" alt="Logotipo" class="w-16 h-16">
                     </a>
                 </div>
 

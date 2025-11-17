@@ -5,7 +5,7 @@
         <div class="w-full max-w-md p-8 bg-white shadow-lg rounded-2xl">
             <!-- Logo -->
             <div class="flex justify-center mb-6">
-                <x-authentication-card-logo class="w-16 h-16" />
+                <img src="{{ asset('logotipo.png') }}" alt="Logotipo" class="w-16 h-16">
             </div>
 
             <!-- Título -->
